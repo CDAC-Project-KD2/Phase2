@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FlyMate Airline Reservation System</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+             background-image: url('https://media.licdn.com/dms/image/v2/D5612AQHGcB5KjTisQg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1693496901877?e=2147483647&v=beta&t=-kzc2MylK6dM2WyISLvDTmu7LUvynkY7QfdhdTeV9AM');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .register-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            width: 400px;
+            text-align: center;
+        }
+
+        .register-container h2 {
+            margin-bottom: 30px;
+            color: #004080;
+        }
+
+        .register-container input[type="text"],
+        .register-container input[type="email"],
+        .register-container input[type="password"] {
+            width: 100%;
+            padding: 12px 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .register-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .register-container button:hover {
+            background-color: #003366;
+        }
+
+        .register-container .links {
+            margin-top: 15px;
+        }
+
+        .register-container .links a {
+            color: #004080;
+            text-decoration: none;
+        }
+
+        .register-container .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <h2>Register</h2>
+        <form action="dashboard.html" method="post">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="links">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
